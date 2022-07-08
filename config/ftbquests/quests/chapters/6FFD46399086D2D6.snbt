@@ -1,0 +1,34 @@
+{
+	id: "6FFD46399086D2D6"
+	group: ""
+	order_index: 0
+	filename: "6FFD46399086D2D6"
+	title: "出售"
+	icon: "minecraft:jack_o_lantern"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "原木"
+		x: -3.0d
+		y: -2.5d
+		id: "3B75BD6C39BC64A5"
+		tasks: [{
+			id: "3A5EE13ACF386B73"
+			type: "item"
+			title: "Any #minecraft:logs"
+			item: {
+				id: "itemfilters:tag"
+				Count: 1b
+				tag: {
+					value: "minecraft:logs"
+				}
+			}
+			consume_items: true
+		}]
+		rewards: [{
+			id: "368B7BA0B035DDCD"
+			type: "ftbmoney:money"
+			ftb_money: 3L
+		}]
+	}]
+}

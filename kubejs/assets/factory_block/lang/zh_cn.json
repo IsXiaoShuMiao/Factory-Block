@@ -1,0 +1,23 @@
+{
+	"text.infinity.book.name":"§b工厂指南",
+	"text.infinity.book.description":"这是FactoryBlock整合包的指南书。",
+	"text.infinity.book.tooltip":"FactoryBlock整合包的指南书",
+	
+	"text.item.kebejs.opened_soup_can":"打开的罐头",
+	"text.item.kebejs.soup_can":"炖菜罐头",
+	"text.item.kebejs.tin_plate":"锡板",
+	"text.item.kubejs.tin_thin_plate":"轻薄锡板",
+	"text.item.kubejs.tin_can":"锡罐",
+	"text.item.kubejs.dirty_tin_can":"肮脏的锡罐",
+	"text.item.kubejs.wrench_bronze":"青铜扳手",
+	
+	"text.fluid.kubejs.soup_flow":"炖菜汤",
+	
+	"text.news.kubejs.begin":"§4[FB新闻]§c"
+	"text.news,kubejs.bb":"本报讯"
+	"text.news,kubejs.inside":"因为用嘴开罐头被活活扎死。FB新闻在此提醒各位不要模仿！"
+	"text.news,kubejs.at":"于"
+	"text.news.kubejs.warning":"§c你为啃开一个罐头，把嘴巴划破了,大出血。"
+	"text.news.kubejs.cold":"我:这个水好凉凉~"
+	"text.news.kubejs.cleaned":"芜湖~洗干净了！"
+}

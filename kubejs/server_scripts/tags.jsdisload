@@ -1,0 +1,4 @@
+onEvent('item.tags', event => {
+    event.get('forge:vegetables').add('frostedheart:white_turnip_block')
+    event.get("diet:proteins").add("kubejs:opened_soup_can")
+})

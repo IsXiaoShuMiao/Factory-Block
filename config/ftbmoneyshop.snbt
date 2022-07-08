@@ -1,0 +1,22 @@
+{
+	tabs: [{
+		title: "前期必需品"
+		icon: {
+			id: "notreepunching:flint_axe"
+			Count: 1b
+			tag: {
+				Damage: 0
+			}
+		}
+		entries: [{
+			item: {
+				id: "notreepunching:flint_axe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			buy: 30L
+		}]
+	}]
+}

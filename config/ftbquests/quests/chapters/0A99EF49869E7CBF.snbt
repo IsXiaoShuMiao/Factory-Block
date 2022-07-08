@@ -1,0 +1,11 @@
+{
+	id: "0A99EF49869E7CBF"
+	group: "25460BF9CF30743E"
+	order_index: 0
+	filename: "0A99EF49869E7CBF"
+	title: "开始"
+	icon: "minecraft:grass_block"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}
