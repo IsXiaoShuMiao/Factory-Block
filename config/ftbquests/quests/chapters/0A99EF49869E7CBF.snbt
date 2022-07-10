@@ -1,11 +1,900 @@
 {
 	id: "0A99EF49869E7CBF"
 	group: "25460BF9CF30743E"
-	order_index: 0
+	order_index: 1
 	filename: "0A99EF49869E7CBF"
-	title: "开始"
+	title: "Factory Block"
 	icon: "minecraft:grass_block"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			title: "结束了？"
+			x: -3.5d
+			y: 0.0d
+			id: "3F573D2FD387BB9E"
+			tasks: [{
+				id: "7592D05B3E18DC59"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 8L
+			}]
+			rewards: [{
+				id: "3D79F5BBABF8D6BB"
+				type: "ftbmoney:money"
+				ftb_money: 3L
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			description: ["使用木钩来撸树叶可以增加树苗掉落几率还可能会有蚕掉落"]
+			dependencies: ["3F573D2FD387BB9E"]
+			id: "0BC311E25862C73D"
+			tasks: [{
+				id: "7E7EF06047143B35"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:crook_wood"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "678B331D9485C06E"
+				type: "ftbmoney:money"
+				ftb_money: 1L
+			}]
+		}
+		{
+			title: "橡树树苗"
+			x: 1.0d
+			y: -2.0d
+			description: ["来自作者的吐槽：FTBM竟然不能给1.5的钱那我就只好给1块了~"]
+			dependencies: ["0BC311E25862C73D"]
+			id: "2E3F530D46FBA4D0"
+			tasks: [{
+				id: "6BC703ED3D5AB786"
+				type: "item"
+				item: "minecraft:oak_sapling"
+				count: 3L
+			}]
+			rewards: [{
+				id: "12FDE0229E866691"
+				type: "ftbmoney:money"
+				ftb_money: 1L
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			description: [
+				"用钩子撸普通树叶，蚕的掉率较低，万事开头难，所以多种几棵树总会掉落蚕的"
+				""
+				"右键放在树叶上可以蔓延开，最后把树叶完全染白意为蚕成熟了，打碎“白化”树叶即可掉落丝线和蚕，是丝线的主要生产方式"
+				""
+				"注意：完全变白的树叶是不会掉落树苗的，所以养蚕用的树，和正常种植的树尽量分开，避免出现用光所有树苗的尴尬情景"
+			]
+			dependencies: ["0BC311E25862C73D"]
+			id: "6D697F28619DCE48"
+			tasks: [{
+				id: "68DA123E54E2859C"
+				type: "item"
+				item: "exnihilosequentia:silkworm"
+			}]
+			rewards: [{
+				id: "74B6281B5E5DCB8E"
+				type: "ftbmoney:money"
+				ftb_money: 4L
+			}]
+		}
+		{
+			title: "木桶"
+			x: 2.5d
+			y: -3.0d
+			description: [
+				"推荐准备4个木桶，并摆放出来，木桶可以在下雨的时候蓄水"
+				""
+				"你可以将有机物发酵成泥土如：树叶，树种，蚕，蜘蛛丝，各种肉类，各种农作物，需要的数量不同"
+				""
+				"木桶的其他用法："
+				"1·产生岩浆源：木桶内可以放入岩浆，但在一定时间内木桶会烧毁变成岩浆源(20s)；"
+				"2·产生水：在下雨的情况下，木桶会自动盛水，盛满后可以用桶取出；"
+				"3·产生粘液球和史莱姆：在木桶内加入一桶水和一桶牛奶，过一段时间后使用钩子可以取出粘液球，如果等待的时间足够长，会生成史莱姆；"
+				"4·产生地狱岩和末地石：在桶内放岩浆，在用一个红石右键桶，会生成一个地狱岩；若用一个萤石粉会生成末地石；"
+				"5·转化圆石为苔石：在桶内装有水且桶的同一高度周围的5X5的方块中有圆石时，在确保圆石和桶不受阳光直射，过一段时间后，圆石会变成苔石。石砖是否同样可行有待测试；"
+				"6·产生巫水：在桶内装满水且以木桶为中心的3x3x3的范围内有菌丝方块时，木桶内的水会慢慢转化为巫水，且速度受菌丝方块数量影响，转化过程中会在菌丝方块上面生成蘑菇；"
+				"7·产生灵魂沙：木桶内有巫水的情况下，用沙子右键可以生成灵魂沙；"
+				"8·产生黏土：在桶内放水，再用尘土右键桶会生成一个粘土；"
+				"9·产生黑曜石：在桶内放置岩浆，再在桶的上方放置一桶水，岩浆会变成黑曜石，不需要钻石镐即可获取黑曜石"
+			]
+			dependencies: ["2E3F530D46FBA4D0"]
+			id: "6CE2003F6D12FC7F"
+			tasks: [{
+				id: "275A54C063102713"
+				type: "item"
+				title: "Any #exnihilosequentia:barrels"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "exnihilosequentia:barrels"
+					}
+				}
+			}]
+			rewards: [{
+				id: "48AEDC4BB2F82356"
+				type: "ftbmoney:money"
+				ftb_money: 3L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			description: [
+				"1·用木锤锤碎圆石   →   砂砾 "
+				"2·用木锤锤碎砂砾   →   沙子 "
+				"3·用木锤锤碎沙子   →   尘土"
+				""
+				"木锤有更多的版本，石、铁、金、钻、但仅仅是耐久不同，效率都是一致的"
+				""
+				"你也可以通过将多把锤子合成成为压缩锤子，他将会有更高的耐久与更快的效率"
+			]
+			dependencies: ["2E3F530D46FBA4D0"]
+			id: "3ADCD7A542788257"
+			tasks: [{
+				id: "1EE0D0DEF6F8BB0A"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:hammer_wood"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "2920A02FCB0DA54A"
+				type: "ftbmoney:money"
+				ftb_money: 1L
+			}]
+		}
+		{
+			title: "线"
+			x: 3.5d
+			y: 2.0d
+			dependencies: ["6D697F28619DCE48"]
+			id: "7119F7D19BD2D872"
+			tasks: [{
+				id: "613513883C73747E"
+				type: "item"
+				item: "minecraft:string"
+				count: 9L
+			}]
+			rewards: [{
+				id: "35C423956ED33ACA"
+				type: "ftbmoney:money"
+				ftb_money: 4L
+			}]
+		}
+		{
+			x: 6.5d
+			y: 2.0d
+			dependencies: ["7119F7D19BD2D872"]
+			id: "1A3B3A70706E98B4"
+			tasks: [{
+				id: "70EEF11FAB4F1C6F"
+				type: "item"
+				item: "exnihilosequentia:mesh_string"
+			}]
+			rewards: [{
+				id: "4EF1BA7DBEBBC61C"
+				type: "ftbmoney:money"
+				ftb_money: 1L
+			}]
+		}
+		{
+			title: "筛子"
+			x: 6.0d
+			y: -2.0d
+			description: [
+				"手持线筛网右键筛子可以将筛网放置在筛子上"
+				""
+				"可以将多个筛子摆放在一起来一同工作提高效率"
+			]
+			dependencies: ["2E3F530D46FBA4D0"]
+			id: "31564AACD54F34F8"
+			tasks: [{
+				id: "7BF1C966D5FE8A1C"
+				type: "item"
+				title: "Any #exnihilosequentia:sieves"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "exnihilosequentia:sieves"
+					}
+				}
+			}]
+			rewards: [{
+				id: "34C2DD9A3AD68173"
+				type: "ftbmoney:money"
+				ftb_money: 5L
+			}]
+		}
+		{
+			title: "第一次收获"
+			x: 8.5d
+			y: 0.0d
+			description: ["4个石子可以合成一个原石"]
+			dependencies: [
+				"31564AACD54F34F8"
+				"1A3B3A70706E98B4"
+			]
+			id: "6D14715928DEB4BB"
+			tasks: [
+				{
+					id: "6EEF3E54A987D7C7"
+					type: "item"
+					item: "exnihilosequentia:pebble_stone"
+				}
+				{
+					id: "21B8D34298D42E5A"
+					type: "item"
+					title: "Any #forge:seeds"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:seeds"
+						}
+					}
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "518E961B1F25A0C5"
+				type: "ftbmoney:money"
+				ftb_money: 10L
+			}]
+		}
+		{
+			title: "[选做]压缩木棰"
+			x: 4.5d
+			y: -1.0d
+			dependencies: ["3ADCD7A542788257"]
+			optional: true
+			id: "4A8B13A086AB2269"
+			tasks: [{
+				id: "445480CDC01967B9"
+				type: "item"
+				title: "Any #excompressum:compressed_hammer"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "excompressum:compressed_hammer"
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.0d
+			description: [
+				"用锤子打碎沙子获得"
+				"可以用筛子筛得无中生有中的所有粉状矿物和原版中的骨粉、萤石粉、烈焰粉、火药、红石粉"
+				"其他可筛出的东西可以通过JEI查找用途"
+			]
+			dependencies: ["6CE2003F6D12FC7F"]
+			id: "4099CCBE4614D39E"
+			tasks: [{
+				id: "01BAC71BFF0D7F0C"
+				type: "item"
+				item: "exnihilosequentia:dust"
+				count: 3L
+			}]
+			rewards: [{
+				id: "7F872474B348104C"
+				type: "ftbmoney:money"
+				ftb_money: 3L
+			}]
+		}
+		{
+			x: 8.0d
+			y: -3.0d
+			description: ["4个木桶其中两个放入尘土获得2个粘土块=8个粘土"]
+			dependencies: ["4099CCBE4614D39E"]
+			id: "361B0C6B4307357D"
+			tasks: [{
+				id: "6EFE3C7B39DF89F6"
+				type: "item"
+				item: "minecraft:clay_ball"
+				count: 8L
+			}]
+			rewards: [{
+				id: "323B12DC4ACCC245"
+				type: "ftbmoney:money"
+				ftb_money: 4L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.0d
+			description: [
+				"下过雨了之后，我们的木桶就蓄满了水"
+				"前期我们可以通过制造木桶来代替铁桶获得无限水"
+			]
+			dependencies: ["6CE2003F6D12FC7F"]
+			id: "49E45C4201257DF3"
+			tasks: [{
+				id: "2C5FF9AC3402CE62"
+				type: "item"
+				item: {
+					id: "woodenbuckets:wooden_bucket"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 11.0d
+			y: 0.0d
+			dependencies: ["6D14715928DEB4BB"]
+			id: "3809EE0CEA3959BC"
+			tasks: [{
+				id: "1B9F451B42C2DF82"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 16L
+			}]
+			rewards: [{
+				id: "3ACAFC4C37959A14"
+				type: "ftbmoney:money"
+				ftb_money: 8L
+			}]
+		}
+		{
+			x: 9.0d
+			y: -2.0d
+			description: [
+				"这时候我们还要继续用筛子筛一些别的东西"
+				"一般先筛尘土，用来获得粉状矿物和7x骨粉"
+				"如果你选择打怪获得骨粉，那么最好筛砂砾，因为这样矿物获得量最多"
+				""
+				"附："
+				"筛子筛砂砾     →    破碎矿物  、燧石、煤炭、绿宝石、青金石、钻石"
+				"筛子筛沙子     →    粉碎矿物  、仙人掌种子、可可豆、古代孢子、丛林树种子"
+				"筛子筛尘土     →    粉状矿物 、烈焰粉、红石、萤石、骨粉、火药"
+				"筛子筛灵魂沙  →    下界石英、地狱疣、恶魂之泪"
+				""
+				"注意：矿物砂砾/沙子/尘土都相当于原版的金属矿石，可以在熔炉中烧成金属锭"
+			]
+			dependencies: ["31564AACD54F34F8"]
+			id: "6566D36B2F10F20C"
+			tasks: [
+				{
+					id: "27DA203AB74E05D9"
+					type: "item"
+					item: "exnihilosequentia:piece_iron"
+				}
+				{
+					id: "2CF60DDC3FA459D5"
+					type: "item"
+					item: "exnihilosequentia:piece_copper"
+				}
+				{
+					id: "1D334653A0C835D6"
+					type: "item"
+					item: "exnihilosequentia:piece_nickel"
+				}
+				{
+					id: "0A31C719D1F98B5B"
+					type: "item"
+					item: "exnihilosequentia:piece_zinc"
+				}
+				{
+					id: "55F09DAB629927F1"
+					type: "item"
+					item: "exnihilosequentia:piece_lead"
+				}
+				{
+					id: "18E98F54C17DE882"
+					type: "item"
+					item: "exnihilosequentia:piece_uranium"
+				}
+				{
+					id: "29D1C57F66B25288"
+					type: "item"
+					item: "exnihilosequentia:piece_aluminum"
+				}
+				{
+					id: "55ADAE9236F65BF9"
+					type: "item"
+					item: "exnihilosequentia:piece_silver"
+				}
+				{
+					id: "6F0FDEC4EF1E6521"
+					type: "item"
+					item: "exnihilosequentia:piece_gold"
+				}
+			]
+		}
+		{
+			x: 12.0d
+			y: -2.0d
+			dependencies: ["6566D36B2F10F20C"]
+			id: "7D59484ABD060E86"
+			tasks: [{
+				id: "63229E7DD616008E"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 3L
+			}]
+		}
+		{
+			x: 10.5d
+			y: -3.0d
+			description: ["粘土+骨粉合成瓷土，7个瓷土可以合成未烧制的坩埚"]
+			dependencies: ["361B0C6B4307357D"]
+			id: "1E2CD42203E41C75"
+			tasks: [{
+				id: "7AC66667CA9B1A9E"
+				type: "item"
+				item: "exnihilosequentia:crucible_unfired"
+			}]
+		}
+		{
+			x: 13.0d
+			y: -3.0d
+			description: [
+				"在坩埚的底下放上火把坩埚就可以融化圆石，也可以通过放置岩浆、火来加快坩埚融化速度"
+				""
+				"需要融掉4个圆石才能变成一桶岩浆，坩埚可以容纳10桶岩浆"
+			]
+			dependencies: ["1E2CD42203E41C75"]
+			id: "5878FA803EF1A10D"
+			tasks: [{
+				id: "3CD0BFAE5F4A2540"
+				type: "item"
+				item: "exnihilosequentia:crucible_fired"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -3.0d
+			dependencies: ["5878FA803EF1A10D"]
+			id: "75BA8DCF4C4621CF"
+			tasks: [{
+				id: "60367B6631B3C9D4"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: 19.0d
+			y: -3.0d
+			description: [
+				"这里给出一种简易刷石机："
+				"{image:factory_block:textures/qusets/stone.png width:170 height:100 align:1}"
+				"从可以造出第一个刷石机开始，我们的空岛生存之旅就迈进了一大步"
+				"接下来就可以无节制的刷圆石，锤圆石，筛砂砾、沙子、尘土，然后筛出一大堆继续发展的材料"
+			]
+			dependencies: ["75BA8DCF4C4621CF"]
+			id: "10B8FB606CFCDD79"
+			tasks: [{
+				id: "127B0FD3717EFFC3"
+				type: "checkmark"
+				title: "刷石机"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.0d
+			dependencies: ["2E3F530D46FBA4D0"]
+			id: "2B3E63B365C5E3E6"
+			tasks: [{
+				id: "7A45DD876BD7CAE9"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 3L
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			description: ["不知道为什么匠魂三件套属于同一个tag没法改为任意材质都可以"]
+			dependencies: ["2E3F530D46FBA4D0"]
+			id: "01807771BC72CD18"
+			tasks: [{
+				id: "1F9B26975E14B4C0"
+				type: "item"
+				item: {
+					id: "tconstruct:tinker_station"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			description: ["不知道为什么匠魂三件套属于同一个tag没法改为任意材质都可以"]
+			dependencies: ["2E3F530D46FBA4D0"]
+			id: "6D0BC30930F3DDE3"
+			tasks: [{
+				id: "6220299F282B393C"
+				type: "item"
+				item: {
+					id: "tconstruct:part_builder"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.0d
+			description: ["不知道为什么匠魂三件套属于同一个tag没法改为任意材质都可以"]
+			dependencies: ["2E3F530D46FBA4D0"]
+			id: "3BCC610017E39DD5"
+			tasks: [{
+				id: "5D7B401C89F35670"
+				type: "item"
+				item: {
+					id: "tconstruct:crafting_station"
+					Count: 1b
+					tag: {
+						texture: "minecraft:log"
+					}
+				}
+			}]
+			rewards: [{
+				id: "69360C46AF1EC2B0"
+				type: "item"
+				item: "tconstruct:encyclopedia"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.0d
+			description: ["远远不够... ..."]
+			dependencies: ["6CE2003F6D12FC7F"]
+			id: "38AFDE8D626E0D17"
+			tasks: [
+				{
+					id: "6C9E465092AC76DC"
+					type: "item"
+					item: "tconstruct:grout"
+					count: 16L
+				}
+				{
+					id: "7176676AA4A3ABEA"
+					type: "item"
+					item: "minecraft:sand"
+					count: 8L
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: -5.5d
+			description: ["烧制水泥即可获得"]
+			dependencies: ["38AFDE8D626E0D17"]
+			id: "62886A2ABFE96D68"
+			tasks: [{
+				id: "3A91BEC23B399FAE"
+				type: "item"
+				item: "tconstruct:seared_brick"
+				count: 16L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -7.0d
+			dependencies: ["62886A2ABFE96D68"]
+			id: "03228BC80EAB3935"
+			tasks: [{
+				id: "41113720A6B0FF75"
+				type: "item"
+				item: "tconstruct:seared_ingot_gauge"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -7.0d
+			dependencies: ["62886A2ABFE96D68"]
+			id: "50F5F32B7A56A325"
+			tasks: [{
+				id: "3BC113AF7D2EAA88"
+				type: "item"
+				item: "tconstruct:seared_heater"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -8.5d
+			description: ["别忘了还需要焦黑浇筑口和焦黑浇筑台才能正常使用哦！"]
+			dependencies: ["03228BC80EAB3935"]
+			id: "265B55C074E29B73"
+			tasks: [{
+				id: "72267696A16BF917"
+				type: "item"
+				item: "tconstruct:seared_melter"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -8.5d
+			description: ["上面放置焦黑熔化炉，下面放置焦黑加热器"]
+			dependencies: [
+				"265B55C074E29B73"
+				"50F5F32B7A56A325"
+			]
+			id: "1B9000D4EB6006F7"
+			tasks: [{
+				id: "7638C6B17E673F94"
+				type: "questsadditions:structure"
+				title: "建造一个简易的熔炼炉吧！"
+				name: "rl"
+				hasCustomPicture: false
+				layer: true
+			}]
+		}
+		{
+			x: 0.0d
+			y: -10.0d
+			dependencies: ["265B55C074E29B73"]
+			id: "10345A0B22255F6C"
+			tasks: [{
+				id: "13BC99A65DB82334"
+				type: "item"
+				item: "tconstruct:seared_faucet"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -10.0d
+			dependencies: ["265B55C074E29B73"]
+			id: "3AC15F65BF15B85C"
+			tasks: [{
+				id: "6CCC20145EA169A8"
+				type: "item"
+				item: "tconstruct:seared_table"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -7.0d
+			description: [
+				"接下来我们要搭建更高级的一次可以熔炼更多物品的匠魂炉"
+				"你需要使用焦黑石砖来搭建，大小随意，形状也随意，但不要忘记了把冶炼炉控制器，焦黑燃料储罐以及排液口浇筑口放上！"
+				""
+				"更多详细搭建教程可以参阅https://www.mcmod.cn/post/2346.html"
+			]
+			dependencies: ["50F5F32B7A56A325"]
+			id: "5ECB873AB3ED673F"
+			tasks: [{
+				id: "5418DF271B645DD9"
+				type: "item"
+				item: "tconstruct:seared_bricks"
+				count: 16L
+			}]
+		}
+		{
+			x: 5.0d
+			y: -7.0d
+			dependencies: ["5ECB873AB3ED673F"]
+			id: "628234F575456918"
+			tasks: [{
+				id: "3D78F418005A8F3D"
+				type: "item"
+				item: "tconstruct:seared_drain"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -5.5d
+			dependencies: ["5ECB873AB3ED673F"]
+			id: "508F496751670185"
+			tasks: [{
+				id: "7ABA17C1C63A6A47"
+				type: "item"
+				item: "tconstruct:seared_ingot_tank"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -8.5d
+			dependencies: ["5ECB873AB3ED673F"]
+			id: "3F36BD2311655721"
+			tasks: [{
+				id: "0A444F9DDA5EF895"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -5.5d
+			description: [
+				"拓展：合金炉"
+				""
+				"参阅https://www.mcmod.cn/post/2346.html"
+			]
+			optional: true
+			id: "0FF296AF283AD60C"
+			tasks: [{
+				id: "141583E52EDF169C"
+				type: "item"
+				item: "tconstruct:scorched_alloyer"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -5.5d
+			description: [
+				"拓展：熔铸炉"
+				""
+				"参阅：https://www.mcmod.cn/post/2346.html"
+			]
+			optional: true
+			id: "155A6BEB1302CE59"
+			tasks: [{
+				id: "6501A509571C4FE9"
+				type: "item"
+				item: "tconstruct:foundry_controller"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -7.0d
+			description: ["注意：此项的前置为 16x焦黑石砖 "]
+			dependencies: ["5ECB873AB3ED673F"]
+			id: "27FBDC30C9DA1E8C"
+			tasks: [{
+				id: "0886741AC781321D"
+				type: "item"
+				item: "tconstruct:seared_basin"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -7.0d
+			description: ["安山岩可以通过4x安山石子合成获得，配方详见JEI"]
+			dependencies: ["27FBDC30C9DA1E8C"]
+			id: "31D5DEDDA4B61139"
+			tasks: [{
+				id: "24A1A4E2948547B5"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "40CBBD93151449AC"
+					type: "item"
+					item: "create:goggles"
+				}
+				{
+					id: "602B61F53ABE495A"
+					type: "item"
+					item: "create:wrench"
+				}
+				{
+					id: "7044581934E25007"
+					type: "item"
+					item: "create:stressometer"
+				}
+				{
+					id: "7AE2A7A50E636025"
+					type: "item"
+					item: "create:speedometer"
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: -8.0d
+			description: ["传动杆相当于工业的线缆，可以被转动"]
+			dependencies: ["31D5DEDDA4B61139"]
+			id: "6BD635C55FBF38C5"
+			tasks: [{
+				id: "009AE7571103A3D2"
+				type: "item"
+				item: "create:shaft"
+				count: 16L
+			}]
+		}
+		{
+			x: 9.5d
+			y: -7.0d
+			description: ["齿轮可以带动另一个齿轮转动"]
+			dependencies: ["31D5DEDDA4B61139"]
+			id: "04D5B2205DA1969F"
+			tasks: [{
+				id: "24B741812E7F6ABB"
+				type: "item"
+				item: "create:cogwheel"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -6.0d
+			description: [
+				"大齿轮也可以带动另一个齿轮"
+				""
+				"当转动从小齿轮传递到大齿轮时，转动的速度会减半"
+				"反之则加倍，所以利用这个我们可以用套娃的方式得到非常快的速度"
+			]
+			dependencies: ["31D5DEDDA4B61139"]
+			id: "50EB80FBF06A902A"
+			tasks: [{
+				id: "1163271187C12C7B"
+				type: "item"
+				item: "create:large_cogwheel"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -7.0d
+			dependencies: [
+				"6BD635C55FBF38C5"
+				"04D5B2205DA1969F"
+				"50EB80FBF06A902A"
+			]
+			id: "034E78BA64652C72"
+			tasks: [{
+				id: "752C974D3510EE20"
+				type: "item"
+				item: "create:windmill_bearing"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -7.0d
+			dependencies: ["034E78BA64652C72"]
+			id: "009E132223A97FDF"
+			tasks: [{
+				id: "0A062E45CD67F901"
+				type: "item"
+				item: "create:sail_frame"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -8.5d
+			dependencies: ["009E132223A97FDF"]
+			id: "20F09DB09A00407B"
+			tasks: [{
+				id: "0067BBD8466B4906"
+				type: "item"
+				item: "minecraft:white_wool"
+			}]
+		}
+		{
+			x: 14.0d
+			y: -7.0d
+			description: [
+				"数量适中即可，风帆的多少对应力有一定影响但不会太大"
+				""
+				"完成示例："
+			]
+			dependencies: ["009E132223A97FDF"]
+			id: "0608EFA6C0A7CA84"
+			tasks: [{
+				id: "47420FF619ACFE10"
+				type: "item"
+				item: "create:white_sail"
+			}]
+		}
+	]
 }

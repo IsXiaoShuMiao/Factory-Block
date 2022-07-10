@@ -1,0 +1,41 @@
+{
+	id: "18E2161D383EBFFC"
+	group: "25460BF9CF30743E"
+	order_index: 0
+	filename: "18E2161D383EBFFC"
+	title: "注意事项"
+	icon: "minecraft:redstone_torch"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -4.5d
+		y: -4.5d
+		width: 10.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "factory_block:textures/logo.png"
+		hover: ["本整合包部分资料来自于mcmod.cn & mcbbs.net"]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [{
+		title: "扫地机器人"
+		x: -8.0d
+		y: -2.5d
+		description: [
+			"本整合包带有一个扫地机器人每隔30min清扫一次！"
+			""
+			"你可以通过kubejs\\server_scripts\\utils.js文件添加/删除白名单，修改清理时间"
+			"注意：所设置的清理时间必须大于1min"
+			"{image:factory_block:textures/qusets/whitelist.png width:200 height:100 align:1}"
+		]
+		optional: true
+		id: "7EE2AAF58B3A0CB4"
+		tasks: [{
+			id: "469C1582B165781B"
+			type: "checkmark"
+			title: "扫地机器人"
+		}]
+	}]
+}

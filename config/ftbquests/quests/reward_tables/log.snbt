@@ -1,0 +1,10 @@
+{
+	id: "687BE06FBC0E74D9"
+	order_index: 0
+	title: "log"
+	loot_size: 1
+	rewards: [{
+		ftb_money: 3L
+		type: "ftbmoney:money"
+	}]
+}

@@ -6,6 +6,7 @@ onEvent('item.registry', event => {
     event.create('dirty_tin_can').maxStackSize(64).texture('kubejs:item/dirty_tin_can').displayName('脏兮兮的锡罐')
     event.create('tin_plate').maxStackSize(64).texture('kubejs:item/tin_plate').displayName('锡板')
     event.create('tin_thin_plate').maxStackSize(64).texture('kubejs:item/tin_thin_plate').displayName('轻薄锡板')
+    event.create('money').maxStackSize(64).texture('kubejs:item/money').displayName('钱')
 })
 onEvent('fluid.registry', event => {
 	event.create('liquid_soup').displayName(`炖菜汤`).textureStill('kubejs:fluid/soup_still').textureFlowing('kubejs:fluid/soup_flow').bucketColor(0xb07f22)

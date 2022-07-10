@@ -1,22 +1,128 @@
 {
-	tabs: [{
-		title: "前期必需品"
-		icon: {
-			id: "notreepunching:flint_axe"
-			Count: 1b
-			tag: {
-				Damage: 0
-			}
-		}
-		entries: [{
-			item: {
+	tabs: [
+		{
+			title: "前期必需品"
+			icon: {
 				id: "notreepunching:flint_axe"
 				Count: 1b
 				tag: {
 					Damage: 0
 				}
 			}
-			buy: 30L
-		}]
-	}]
+			entries: [
+				{
+					item: {
+						id: "notreepunching:flint_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					buy: 30L
+				}
+				{
+					item: "minecraft:oak_sapling"
+					buy: 15L
+				}
+				{
+					item: "minecraft:dirt"
+					buy: 5L
+				}
+				{
+					item: "minecraft:water_bucket"
+					buy: 65L
+				}
+				{
+					item: "minecraft:lava_bucket"
+					buy: 65L
+				}
+			]
+		}
+		{
+			title: "矿物"
+			icon: "minecraft:iron_ore"
+			entries: [
+				{
+					item: "minecraft:stone"
+					buy: 1L
+				}
+				{
+					item: "minecraft:cobblestone"
+					buy: 1L
+				}
+				{
+					item: "minecraft:gravel"
+					buy: 1L
+				}
+				{
+					item: "minecraft:gold_ore"
+					buy: 20L
+				}
+				{
+					item: "minecraft:iron_ore"
+					buy: 15L
+				}
+				{
+					item: "minecraft:coal_ore"
+					buy: 10L
+				}
+				{
+					item: "minecraft:lapis_ore"
+					buy: 7L
+				}
+				{
+					item: "minecraft:diamond_ore"
+					buy: 100L
+				}
+				{
+					item: "minecraft:redstone_ore"
+					buy: 25L
+				}
+				{
+					item: "minecraft:emerald_ore"
+					buy: 150L
+				}
+				{
+					item: "minecraft:glowstone"
+					buy: 3L
+				}
+				{
+					item: "exnihilosequentia:chunk_copper"
+					buy: 13L
+				}
+				{
+					item: "exnihilosequentia:chunk_lead"
+					buy: 13L
+				}
+				{
+					item: "exnihilosequentia:chunk_nickel"
+					buy: 13L
+				}
+				{
+					item: "exnihilosequentia:chunk_silver"
+					buy: 13L
+				}
+				{
+					item: "exnihilosequentia:chunk_aluminum"
+					buy: 13L
+				}
+				{
+					item: "exnihilosequentia:chunk_uranium"
+					buy: 13L
+				}
+				{
+					item: "exnihilosequentia:chunk_zinc"
+					buy: 13L
+				}
+				{
+					item: "exnihilosequentia:chunk_iron"
+					buy: 15L
+				}
+				{
+					item: "exnihilosequentia:chunk_gold"
+					buy: 13L
+				}
+			]
+		}
+	]
 }

@@ -8,4 +8,5 @@ onEvent('recipes', event => {
     event.recipes.createFilling('kubejs:opened_soup_can', ['kubejs:tin_can', Fluid.of('kubejs:liquid_soup', 250)])
     event.recipes.createDeploying('kubejs:soup_can', ['kubejs:opened_soup_can', 'kubejs:tin_thin_plate'])
     event.shapeless("kubejs:opened_soup_can",["kubejs:soup_can"])
+    event.shaped('woodenbuckets:wooden_bucket',['   ','WAW',' W ',{W:'#minecraft:logs',A:'woodenhopper:wooden_hopper'}])
 });

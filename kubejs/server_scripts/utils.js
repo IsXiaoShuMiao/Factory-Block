@@ -4,7 +4,6 @@ onEvent('item.food_eaten', event => {
         event.player.giveInHand('kubejs:opened_soup_can')
         if (event.player.getHealth() <= 4){
             event.server.tell('§4[FB新闻]§c' + '本报讯' + event.player + '于' + event.time + '因为用嘴开罐头被活活扎死。FB新闻在此提醒各位不要模仿！')
-            event.player.tell('§4[FB新闻]§c' + '本报讯' + event.player + '于' + event.time + '因为用嘴开罐头被活活扎死。FB新闻在此提醒各位不要模仿！')
         }else{
             event.player.tell('§c你为啃开一个罐头，把嘴巴划破了,大出血。')
         }
@@ -32,13 +31,6 @@ onEvent('item.right_click', event => {
         Fluid.of('minecraft:water', 100),
         'kubejs:dirty_tin_can'
         ]).heated()
-})
-
-//ftb quests
-onEvent('ftbquests.completed.3B75BD6C39BC64A5',event => {
-    event.source.actual.data.ftbquests.changeProgress('3B75BD6C39BC64A5',event =>{
-        event.reste = true
-    })
 })
 
 //cleaner

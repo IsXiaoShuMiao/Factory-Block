@@ -5,12 +5,14 @@
 	filename: "6FFD46399086D2D6"
 	title: "出售"
 	icon: "minecraft:jack_o_lantern"
+	disable_toast: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [{
 		title: "原木"
 		x: -3.0d
 		y: -2.5d
+		optional: true
 		id: "3B75BD6C39BC64A5"
 		tasks: [{
 			id: "3A5EE13ACF386B73"
@@ -26,9 +28,9 @@
 			consume_items: true
 		}]
 		rewards: [{
-			id: "368B7BA0B035DDCD"
-			type: "ftbmoney:money"
-			ftb_money: 3L
+			id: "51DCE76BD5231581"
+			type: "questsadditions:repeat"
+			table_id: 7528857972580971737L
 		}]
 	}]
 }
