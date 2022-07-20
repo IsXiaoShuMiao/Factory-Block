@@ -1,5 +1,5 @@
 onEvent('jei.information', event => {
-    event.add('kubejs:opened_soup_can', ['已经打开了的罐头', '你可以使用扳手来打开它','或者你也可以试着使用你的嘴？'])
+    event.add('kubejs:opened_soup_can', ['已经打开了的罐头', '你可以直接放在背包内合成来打开它','或者你也可以试着使用你的嘴？'])
   })
 
 onEvent('jei.hide.items', event => {

@@ -3,7 +3,7 @@
 	group: "25460BF9CF30743E"
 	order_index: 1
 	filename: "0A99EF49869E7CBF"
-	title: "Factory Block"
+	title: "Begining"
 	icon: "minecraft:grass_block"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -165,6 +165,7 @@
 			title: "线"
 			x: 3.5d
 			y: 2.0d
+			description: ["破坏被蚕感染了的树叶即可获得丝线"]
 			dependencies: ["6D697F28619DCE48"]
 			id: "7119F7D19BD2D872"
 			tasks: [{
@@ -323,10 +324,7 @@
 		{
 			x: 2.5d
 			y: -5.0d
-			description: [
-				"下过雨了之后，我们的木桶就蓄满了水"
-				"前期我们可以通过制造木桶来代替铁桶获得无限水"
-			]
+			description: ["下过雨了之后，我们的木桶就蓄满了水"]
 			dependencies: ["6CE2003F6D12FC7F"]
 			id: "49E45C4201257DF3"
 			tasks: [{
@@ -421,6 +419,11 @@
 					id: "6F0FDEC4EF1E6521"
 					type: "item"
 					item: "exnihilosequentia:piece_gold"
+				}
+				{
+					id: "07E4214121845006"
+					type: "item"
+					item: "minecraft:andesite"
 				}
 			]
 		}
@@ -769,7 +772,11 @@
 		{
 			x: 8.0d
 			y: -7.0d
-			description: ["安山岩可以通过4x安山石子合成获得，配方详见JEI"]
+			description: [
+				"安山岩可以通过4x安山石子合成获得，配方详见JEI"
+				""
+				"安山合金可以通过匠魂浇筑获得"
+			]
 			dependencies: ["27FBDC30C9DA1E8C"]
 			id: "31D5DEDDA4B61139"
 			tasks: [{
@@ -870,23 +877,13 @@
 			}]
 		}
 		{
-			x: 12.5d
-			y: -8.5d
-			dependencies: ["009E132223A97FDF"]
-			id: "20F09DB09A00407B"
-			tasks: [{
-				id: "0067BBD8466B4906"
-				type: "item"
-				item: "minecraft:white_wool"
-			}]
-		}
-		{
 			x: 14.0d
 			y: -7.0d
 			description: [
 				"数量适中即可，风帆的多少对应力有一定影响但不会太大"
 				""
 				"完成示例："
+				"{image:factory_block:textures/qusets/create_windmill.png width:100 height:100 align:1}"
 			]
 			dependencies: ["009E132223A97FDF"]
 			id: "0608EFA6C0A7CA84"
@@ -894,6 +891,38 @@
 				id: "47420FF619ACFE10"
 				type: "item"
 				item: "create:white_sail"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.5d
+			dependencies: ["7119F7D19BD2D872"]
+			id: "737273AB75A41F03"
+			tasks: [{
+				id: "6B33C7EC44586F1D"
+				type: "item"
+				item: "minecraft:white_wool"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -4.5d
+			dependencies: ["361B0C6B4307357D"]
+			id: "3BA91C431055B8F8"
+			tasks: [{
+				id: "47D294023865BEF4"
+				type: "item"
+				item: "exnihilosequentia:porcelain_clay"
+			}]
+		}
+		{
+			x: 16.5d
+			y: -7.0d
+			id: "2F0CC880DC5A89B6"
+			tasks: [{
+				id: "16EE08F4FB0FE715"
+				type: "item"
+				item: "create:encased_fan"
 			}]
 		}
 	]
